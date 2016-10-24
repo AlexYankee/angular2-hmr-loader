@@ -45,17 +45,17 @@ function Angular2HMRLoader(source, sourcemap) {
     '    if (MODULE_REF.instance["hmrOnStatus"]) {'+ newLine +
     '      module["hot"]["apply"](function(status: any) {'+ newLine +
     '        MODULE_REF.instance["hmrOnStatus"](status);'+ newLine +
-    '      });'+ newLine +
+    '      } as any);'+ newLine +
     '    }'+ newLine +
     '    if (MODULE_REF.instance["hmrOnCheck"]) {'+ newLine +
     '      module["hot"]["check"](function(err: any, outdatedModules: any) {'+ newLine +
     '        MODULE_REF.instance["hmrOnCheck"](err, outdatedModules);'+ newLine +
-    '      });'+ newLine +
+    '      } as any);'+ newLine +
     '    }'+ newLine +
     '    if (MODULE_REF.instance["hmrOnDecline"]) {'+ newLine +
     '      module["hot"]["decline"](function(dependencies: any) {'+ newLine +
     '        MODULE_REF.instance["hmrOnDecline"](dependencies);'+ newLine +
-    '      });'+ newLine +
+    '      } as any);'+ newLine +
     '    }'+ newLine +
     '    module["hot"]["dispose"](function(store: any) {'+ newLine +
     '      MODULE_REF.instance["hmrOnDestroy"] && MODULE_REF.instance["hmrOnDestroy"](store);'+ newLine +
